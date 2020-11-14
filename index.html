@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <p>Choose one correct answer</p>
+    <form>
+        <div>
+            <p>1. When the First World War began</p>
+            <div>
+                <input type="radio" value="1918" name="firstYear" id="year_1">
+                <label for="year_1"> 1918</label>
+            </div>
+            <div>
+                <input type="radio" value="1914" name="firstYear" id="year_2">
+                <label for="year_2"> 1914</label>
+            </div>
+            <div>
+                <input type="radio" value="1917" name="firstYear" id="year_3">
+                <label for="year_3"> 1917</label>
+            </div>
+        </div>
+
+        <div>
+            <p>2. When the Second World War began</p>
+            <div>
+                <input type="radio" value="1939" name="secondYear" id="secYear_1">
+                <label for="secYear_1"> 1939</label>
+            </div>
+            <div>
+                <input type="radio" value="1941" name="secondYear" id="secYear_2">
+                <label for="secYear_2"> 1941</label>
+            </div>
+            <div>
+                <input type="radio" value="1940" name="secondYear" id="secYear_3">
+                <label for="secYear_3"> 1940</label>
+            </div>
+        </div>
+
+        <div>
+            <p>3. When Ukraine gained independence</p>
+            <div>
+                <input type="radio" value="1993" name="thirdYear" id="thirdYear_1">
+                <label for="thirdYear_1"> 1993</label>
+            </div>
+            <div>
+                <input type="radio" value="1991" name="thirdYear" id="thirdYear_2">
+                <label for="thirdYear_2"> 1991</label>
+            </div>
+            <div>
+                <input type="radio" value="1989" name="thirdYear" id="thirdYear_3">
+                <label for="thirdYear_3"> 1989</label>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div>
+            <input type="button" value="Click on me" onclick="checkAnswer()">
+        </div>
+    
+    </form>
+    <p id="message"></p>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
