@@ -38,8 +38,13 @@ function checkAnswer() {
         break;
     }
 
+    if(result === 0) {
+        let audio = new Audio('./audio/audio_1.mp3');
+        audio.play();
+    }
     result = `You got  ${result}   points`;
     document.getElementById("message").innerHTML = result;
     document.getElementById("message").style.backgroundColor = "rgba(110,200,200,0.8)";
+    
     return result;
 }
